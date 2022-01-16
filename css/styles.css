@@ -9,10 +9,117 @@
 :root {
   --primary-text-color: #757575;
   --main-background-color: #ffffff;
+  --title-text-color: #212121;
+  --accent-color: #2196f3;
+  --dark-background: #2f303a;
+  --secondary-text-color: rgba(255, 255, 255, 0.6);
 }
 
 body {
   font-family: Roboto, sans-serif;
   background-color: var(--main-background-color);
   color: var(--primary-text-color);
+}
+
+.logo-link {
+  color: var(--title-text-color);
+  font-family: Raleway, serif;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+}
+.logo-web {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style-type: none;
+}
+.site-nav {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: var(--accent-color);
+}
+/* не получается задать цвет ссылки и убрать подчеркиване */
+
+.contact-info {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+.contact-info-item {
+  color: var(--primary-text-color);
+  text-decoration-line: none;
+}
+
+.page-filter {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+}
+
+.hidden-title {
+  visibility: hidden;
+}
+
+.project-portfolio {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.project-type {
+  color: var(--primary-text-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.8;
+  letter-spacing: 0.03em;
+}
+
+.footer {
+  background-color: var(--dark-background);
+}
+
+.footer-logo-link {
+  color: var(--main-background-color);
+  text-decoration-line: none;
+}
+
+.address-first-item {
+  color: var(--main-background-color);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  text-decoration-line: none;
+}
+.address-item {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  font-style: normal;
+  text-decoration-line: none;
 }
