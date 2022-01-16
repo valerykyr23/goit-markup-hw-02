@@ -1,0 +1,18 @@
+/* белый цвет background и текста: #FFFFFF */
+/* вторичный белый цвет background #E5E5E5 */
+/* третичный белый цвет background: #F5F4FA */
+/* черный цвет  background: #2F303A */
+/* цвет текста черный  #212121 */
+/* цвет текста акцент голубой  #2196F3 */
+/*основной цвет текста серый  #757575 */
+/* белый цвет текста  футера с прозрачностью #FFFFFF99 */
+:root {
+  --primary-text-color: #757575;
+  --main-background-color: #ffffff;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background-color: var(--main-background-color);
+  color: var(--primary-text-color);
+}
