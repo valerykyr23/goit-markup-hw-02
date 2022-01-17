@@ -6,6 +6,7 @@
 /* цвет текста акцент голубой  #2196F3 */
 /*основной цвет текста серый  #757575 */
 /* белый цвет текста  футера с прозрачностью #FFFFFF99 */
+
 :root {
   --primary-text-color: #757575;
   --main-background-color: #ffffff;
@@ -33,6 +34,26 @@ body {
   color: var(--accent-color);
 }
 
+.hero {
+  color: var(--main-background-color);
+  background-color: var(--dark-background);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.hero-button {
+  color: var(--main-background-color);
+  background-color: var(--accent-color);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.8;
+  text-align: center;
+  letter-spacing: 0.06em;
+}
 .list {
   list-style-type: none;
 }
@@ -49,7 +70,6 @@ body {
 .site-nav .link:focus {
   color: var(--accent-color);
 }
-/* не получается задать цвет ссылки и убрать подчеркиване */
 
 .contact-info {
   font-weight: 500;
@@ -62,23 +82,69 @@ body {
   text-decoration-line: none;
 }
 
+.contact-info-item:hover,
+.contact-info-item:focus {
+  color: var(--accent-color);
+}
+
 .page-filter {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
-  cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: var(--main-background-color);
   background-color: var(--accent-color);
+  cursor: pointer;
 }
+
+/* Скрытый заголовок */
 
 .hidden-title {
   visibility: hidden;
+}
+
+.feature-title {
+  color: var(--title-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.feature-description {
+  color: var(--primary-text-color);
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.section-title {
+  color: var(--title-text-color);
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+
+.teamplayer-name {
+  color: var(--title-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+.teamplayer-position {
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
 
 .project-portfolio {
@@ -91,11 +157,11 @@ body {
 
 .project-type {
   color: var(--primary-text-color);
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.03em;
 }
+/* Оформление футера */
 
 .footer {
   background-color: var(--dark-background);
@@ -113,6 +179,7 @@ body {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-decoration-line: none;
+  font-style: normal;
 }
 .address-item {
   font-weight: 400;
