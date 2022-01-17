@@ -71,6 +71,10 @@ body {
   color: var(--accent-color);
 }
 
+.site-nav .link.current {
+  color: var(--accent-color);
+}
+
 .contact-info {
   font-weight: 500;
   font-size: 14px;
