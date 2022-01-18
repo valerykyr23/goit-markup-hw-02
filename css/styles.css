@@ -27,7 +27,7 @@ body {
   background-color: var(--main-background-color);
 }
 .main {
-  background-color: var(--secondary-white-background);
+  background-color: var(--main-background-color);
 }
 /* Оформление надписи логотипа вверху и внизу*/
 .footer-logo-link,
@@ -73,6 +73,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   letter-spacing: 0.06em;
+  cursor: pointer;
 }
 
 /* Утилитный класс */
@@ -163,7 +164,7 @@ body {
 }
 
 .section-work {
-  background-color: var(--secondary-white-background);
+  background-color: var(--main-background-color);
 }
 
 .section-team {
@@ -225,4 +226,9 @@ body {
   letter-spacing: 0.03em;
   text-decoration-line: none;
   font-style: normal;
+}
+
+.address-item:hover,
+.address-item:focus {
+  color: var(--accent-color);
 }
